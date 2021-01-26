@@ -180,6 +180,8 @@
     if (pickerLabel == nil) {
         pickerLabel = [[UILabel alloc] init];
     }
+
+    pickerLabel.adjustsFontSizeToFitWidth = self.adjustsFontSizeToFitWidth;
     
     NSAttributedString *attributedTitle = [self pickerView:pickerView attributedTitleForRow:row forComponent:component];
     if (attributedTitle == nil) {
